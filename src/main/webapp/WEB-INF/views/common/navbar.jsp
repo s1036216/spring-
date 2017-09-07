@@ -94,7 +94,7 @@
 }
  */
  app.navbar.init();
-
+ app.main.init();
 /* window.onload=navbarLoad();
 function navbarLoad(){
 	var u1=document.getElementById("navbar_ul_stu");
@@ -124,10 +124,7 @@ function navbarLoad(){
 	logout.setAttribute("style","color:white");
 	logout.setAttribute("onclick","logout('common','index')");
 	}
- */
-
-/**********************************************detail??****************************************/
-/* function studentInfo(){
+ ******************************************detail??****************************************
 	  var id='id',
 	      id_val='${requestScope.student.id}',
 	      name='name',
@@ -141,7 +138,7 @@ function navbarLoad(){
 }
 
 
-/*******************************************************add
+
 function memberAdd(){
 	var member_id =document.getElementById('member_id').value;
 	var password = document.getElementById('password').value;
@@ -174,8 +171,11 @@ function memberAdd(){
 	var form = document.getElementById('join_form');
 	form.setAttribute('action','${ctx}/member.do');
 	form.setAttribute('method','post');
-	 get방식은 이렇게 할필요가 없다 , post방식에서만 이렇게 쓴다 */
+	
+	
+	
 
 
+*/
 
 </script>

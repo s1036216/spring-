@@ -12,7 +12,7 @@
      </definition>
      <definition name="auth" template="/WEB-INF/views/common/layout.jsp">
            <put-attribute name="title" value=""></put-attribute>
-           <put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+           <put-attribute name="header" value="/WEB-INF/views/common/navbar.jsp" />
            <put-attribute name="content" value=""></put-attribute>
            <put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
      </definition>

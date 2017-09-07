@@ -13,26 +13,26 @@ public class GradeController {
 	@RequestMapping("/grade_add")
 	public String gradeAdd() {
      logger.info("GradeController::::: gradeAdd {}","진입");
-		return "public:grade/grade_add.tiles";
+		return "auth:grade/grade_add.tiles";
 	}
 	@RequestMapping("/grade_list")
 	public String gradeList() {
 	   logger.info("GradeController::::: gradeList {}","진입");
-		return "public:grade/grade_list.tiles";
+		return "auth:grade/grade_list.tiles";
 	}
 	@RequestMapping("/grade_detail")
 	public String gradeDetail() {
 	   logger.info("GradeController::::: gradeDetail {}","진입");
-		return "public:grade/grade_detail.tiles";
+		return "auth:grade/grade_detail.tiles";
 	}
 	@RequestMapping("/grade_update")
 	public String gradeUpdate() {
 		logger.info("GradeController::::: gradeUpdate {}","진입");
-		return "public:grade/grade_update.tiles";
+		return "auth:grade/grade_update.tiles";
 	}
 	@RequestMapping("/grade_delete")
 	public String gradeDelete() {
 		logger.info("GradeController::::: gradeUpdate {}","진입");
-		return "public:grade/grade_delete.tiles";
+		return "auth:grade/grade_delete.tiles";
 	}
 }

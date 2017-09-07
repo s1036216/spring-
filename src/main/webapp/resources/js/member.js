@@ -82,13 +82,13 @@ app.main = (function() {
    var onCreate = function() { /* controller */
       /* 자바에서 받은것 모델에서 가져온 데이터의 제어는 이곳에서 한다 */
       setContentView();
-     
+      $('.list-group').children().addClass("list-group-item");
       $('.list-group li').eq(0).on('click', function() {
          app.controller.moveTo('member', 'member_add');
       });
       $('.list-group li').eq(1).on('click', function() {
          app.controller.moveTo('member', 'member_list');
-   
+         /* app.controller.list('member','member_list','1'); */
       });
       $('.list-group li').eq(2).on('click', function() {
          app.controller.moveTo('member', 'member_detail');
@@ -111,30 +111,28 @@ app.main = (function() {
          app.controller.moveTo('grade','grade_detail');
       });
       $('.list-group li').eq(8).on('click', function() {
-         app.controller.moveTo('garde','grade_detail');
-      });
-      $('.list-group li').eq(9).on('click', function() {
          app.controller.moveTo('grade','grade_update');
       });
-      $('.list-group li').eq(10).on('click', function() {
-    	  alert('1111');
+      $('.list-group li').eq(9).on('click', function() {
          app.controller.moveTo('grade','grade_delete');
       });
-      $('.list-group li').eq(11).on('click', function() {
+      $('.list-group li').eq(10).on('click', function() {
           app.controller.moveTo('board','board_add');
        });
-       $('.list-group li').eq(12).on('click', function() {
+      $('.list-group li').eq(11).on('click', function() {
           app.controller.moveTo('board','board_list');
        });
-       $('.list-group li').eq(13).on('click', function() {
-          app.controller.moveTo('board','board_detail');
+      $('.list-group li').eq(12).on('click', function() {
+          app.controller.moveTo('board','board_detile');
        });
-       $('.list-group li').eq(14).on('click', function() {
+      $('.list-group li').eq(13).on('click', function() {
+          app.controller.moveTo('board','board_update');
+       });
+      $('.list-group li').eq(13).on('click', function() {
           app.controller.moveTo('board','board_delete');
        });
-       $('.list-group li').eq(15).on('click', function() {
-          app.controller.moveTo('지울 성적??');
-       });
+      
+
    };
    var setContentView = function() { /* view */
       var $u1 = $("#main_ul_stu");
