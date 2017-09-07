@@ -2,7 +2,7 @@
 <header>
 <jsp:include page="navbar.jsp"/>
 </header>
-<div class="jumbotron text-center">
+<div class="jumbotron text-center">/
  <h1>Grade Management System</h1>
  </div>
 
