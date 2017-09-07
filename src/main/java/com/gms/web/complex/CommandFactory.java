@@ -19,6 +19,7 @@ public class CommandFactory {
 			case Action.UPDATE:
 			case Action.DETAIL:
 			case Action.DELETE:
+				
 			     cmd= new MoveCommand(dir, action, page);
 			break;
 			case Action.LIST:
