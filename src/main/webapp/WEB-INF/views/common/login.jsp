@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <body>
 <div id="wrapper">
 <div id="container">
 	<img src="${img}/login.png" alt="" /><br />
 	<mark style="color: red;">*ID는 숫자포함 8자 이내</mark><br />
 <form id="login_box" name="login_box" >
+
          <!--do 서블릿  -->
          <fieldset class="form-edit">
             <legend>로그인</legend>

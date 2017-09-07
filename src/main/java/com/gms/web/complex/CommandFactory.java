@@ -24,7 +24,6 @@ public class CommandFactory {
 			case Action.LIST:
 				cmd= new ListCommand(dir, action, page, pageNumber);
 				break;
-			
 			case Action.SEARCH:
 				cmd= new SearchCommand(dir, action, page, pageNumber, column, search);
 				if(cmd==null){
@@ -34,7 +33,6 @@ public class CommandFactory {
 				}
 				break;
 			default:/*이게 찍히면 시스템 종료다 */System.out.println("Command Failed!!!!!");break;
-			
 		}
 		return cmd; 
 	}

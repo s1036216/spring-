@@ -14,26 +14,26 @@ public class BoardController {
 	@RequestMapping("/board_add")
 	public String boardAdd() {
 		logger.info("BoardController::::: boardAdd {}","진입");
-		return "board/board_add";
+		return "public:board/board_add.tiles";
 	}
 	@RequestMapping("/board_list")
 	public String boardList() {
 		logger.info("BoardController::::: boardList {}","진입");
-		return "board/board_list";
+		return "public:board/board_list.tiles";
 	}
 	@RequestMapping("/board_detail")
 	public String boardDetail() {
 		logger.info("BoardController::::: boardDetail {}","진입");
-		return "board/board_detail";
+		return "public:board/board_detail.tiles";
 	}
 	@RequestMapping("/board_update")
 	public String boardUpdate() {
 		logger.info("BoardController::::: boardUpdate {}","진입");
-		return "board/board_update";
+		return "public:board/board_update.tiles";
 	}
 	@RequestMapping("/board_delete")
 	public String boardDelete() {
 		logger.info("BoardController::::: boardDelete {}","진입");
-		return "board/board_list";
+		return "public:board/board_list.tiles";
 	}
 }

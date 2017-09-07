@@ -24,17 +24,17 @@ public class AuthController {
 		logger.info("AuthController!:::::login-- {}","진입" );
 		model.addAttribute("input_id","hong");
 		model.addAttribute("input_password","1");
-		return "common/main";
+		return "public:common/main.tiles";
 	}
 	@RequestMapping("/go_main")
 	public String goMain(){
 		logger.info("AuthController!:::::login-- {}","진입" );
-		return "common/main";
+		return "public:common/main.tiles";
 	}
 	@RequestMapping("/go_login")
 	public String gogoLogin(){
 		logger.info("AuthController!:::::login-- {}","진입" );
-		return "common/login";
+		return "public:common/login.tiles";
 	}
 
 }
